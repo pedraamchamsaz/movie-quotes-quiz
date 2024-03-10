@@ -108,7 +108,7 @@ getNewQuestion = () => {
     // keeps track of score
     if (availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) { // if game is over...
         localStorage.setItem('mostRecentScore', score) // ...set score in local storage under 'mostRecentScore'...
-        return window.location.assign('quiz-app/end.html') // ...and go to end.html
+        return window.location.assign('end.html') // ...and go to end.html
     }
 
     questionsCounter++
